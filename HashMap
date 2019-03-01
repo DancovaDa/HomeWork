@@ -1,0 +1,55 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Students {
+
+    private String name;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Students)) return false;
+
+        Students students = (Students) o;
+
+        return name.equals(students.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode();
+    }
+
+    public static void main(String[] args) {
+        Students student1 = new Students();
+        student1.name = "IVANOV";
+        Students student2 = new Students();
+        student2.name = "PETROV";
+        Students student3 = new Students();
+        student3.name = "SIDOROV";
+        Students student4 = new Students();
+        student4.name = "PAVLOV";
+        Students student5 = new Students();
+        student5.name = "SOKOLOV";
+
+        Map<String, Students> group = new HashMap<>();
+
+        group.put(student1.name, student1);
+        group.put(student2.name, student2);
+        group.put(student3.name, student3);
+        group.put(student4.name, student4);
+        group.put(student5.name, student5);
+
+        Students number1 = group.get(student1.name);
+        Students number2 = group.get(student2.name);
+        Students number3 = group.get(student3.name);
+        Students number4 = group.get(student4.name);
+        Students number5 = group.get(student5.name);
+
+        System.out.println(number1.name);
+        System.out.println(number2.name);
+        System.out.println(number3.name);
+        System.out.println(number4.name);
+        System.out.println(number5.name);
+    }
+}
