@@ -3,10 +3,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class ArrayList {
+public class DynamicArray1 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        java.util.ArrayList<Integer> numbers = new java.util.ArrayList<Integer>();
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
         for (int i = 0; i < 10; i++) {
             String s = reader.readLine();
             Integer x = Integer.parseInt(s);
@@ -18,3 +18,4 @@ public class ArrayList {
         }
     }
 }
+
