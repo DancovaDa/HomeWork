@@ -1,8 +1,10 @@
+package Subbotin;
+
 public class Сoncatenation {
 
     public static void main(String[] args) {
 
-        String one = "One";
+        /*String one = "One";
         String two = "One " + "Two";
         String three = "One " + "Two " + "Three";
         String four = "One " + "Two " + "Three " + "Four";
@@ -13,7 +15,6 @@ public class Сoncatenation {
         String nine = "One " + "Two " + "Three " + "Four " + "Five " + "Six " + "Seven " + "Eight " + "Nine";
         String ten = "One " + "Two " + "Three " + "Four " + "Five " + "Six " + "Seven " + "Eight " + "Nine " + "Ten";
 
-
         System.out.println(one);
         System.out.println(two);
         System.out.println(three);
@@ -23,7 +24,21 @@ public class Сoncatenation {
         System.out.println(seven);
         System.out.println(eight);
         System.out.println(nine);
-        System.out.println(ten);
+        System.out.println(ten);*/
 
+        String s = "Text 1";
+        for (int i = 0; i < 100; i++) {
+            s += i;
+
+            System.out.println(s);
+        }
+
+        StringBuilder a = new StringBuilder();
+        a.append("Text 2");
+        for(int i = 0;i<100;i++){
+            a.append(i);
+
+            System.out.println(a);
+        }
     }
 }
